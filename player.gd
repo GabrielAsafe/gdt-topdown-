@@ -1,64 +1,81 @@
 extends CharacterBody2D
 
 var speed = 400  # speed in pixels/sec
+var prevAnim = "a"
 
-
-func movePlayer():
+func movePlayer(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	var rDirecrion = round(direction)
 	var numAnim = "0"
-	velocity = direction * speed
+	velocity = direction  * speed
+	
+	
 	
 	if(direction == Vector2(0,0)):
-		#print("idel")
-		$AnimationPlayer.pause()
+		if(prevAnim == "1"):
+			$AnimationPlayer.play("IdlAnimatio1")
+		if(prevAnim == "2"):
+			$AnimationPlayer.play("IdlAnimatio2")
+		if(prevAnim == "3"):
+			$AnimationPlayer.play("IdlAnimatio3")
+		if(prevAnim == "4"):
+			$AnimationPlayer.play("IdlAnimatio4")
+		if(prevAnim == "5"):
+			$AnimationPlayer.play("IdlAnimatio5")
+		if(prevAnim == "6"):
+			$AnimationPlayer.play("IdlAnimatio6")
+		if(prevAnim == "7"):
+			$AnimationPlayer.play("IdlAnimatio7")
+		if(prevAnim == "8"):
+			$AnimationPlayer.play("IdlAnimatio8")
+	else:
+		if(direction == Vector2(0,-1)):#print("cima")
+			numAnim  ="4"
+			prevAnim = numAnim
+		if(direction == Vector2(0,1)):#print("baixo")
+			numAnim = "8"
+			prevAnim = numAnim
+		if(direction == Vector2(1,0)):#print("direita")
+			numAnim = "6"
+			prevAnim = numAnim
+		if(direction == Vector2(-1,0)):#print("esquerda")
+			numAnim = "2"
+			prevAnim = numAnim
+		if(rDirecrion == Vector2(-1, 1)):#print("S A")
+			numAnim = "1"
+			prevAnim = numAnim
+		if(rDirecrion == Vector2(1, 1)):#print("sd")
+			numAnim = "7"
+			prevAnim = numAnim
+		if(rDirecrion == Vector2(1, -1) ):#print("WD")
+			numAnim = "5"
+			prevAnim = numAnim
+		if(rDirecrion == Vector2(-1, -1)):#print("w a")
+			numAnim = "3"
+			prevAnim = numAnim
 		
-	if(direction == Vector2(0,-1)):
-		#$AnimationPlayer.play("attackdir4")
-		#$AnimationPlayer.play("WalkDir4")
-		#print("cima")
 		
-		numAnim = "4"
-	if(direction == Vector2(0,1)):
-		#$AnimationPlayer.play("attackdir8")
-		#$AnimationPlayer.play("WalkDir8")
-		#print("baixo")
+		$AnimationPlayer.play("WalkDir"+numAnim)
 		
-		numAnim = "8"
-	if(direction == Vector2(1,0)):
-		#$AnimationPlayer.play("attackdir6")
-		#$AnimationPlayer.play("WalkDir6")
-		#print("direita")
-		numAnim = "6"
-	if(direction == Vector2(-1,0)):
-		#$AnimationPlayer.play("attackdir2")
-		#$AnimationPlayer.play("WalkDir2")
-		#print("esquerda")
-		numAnim = "2"
-		
+
+
+func constrols(delta):
+	var a = 1
+	var current_animation = "IdlAnimatio"
+	#var input_dir = Vector2.ZERO
+	var input_dir = Input.get_vector("left", "right", "up", "down")
+	#direction = input_dir.normalized()
 	
 
-	if(rDirecrion == Vector2(-1, 1)):
-		#print("S A")
-		#$AnimationPlayer.play("WalkDir1")
-		numAnim = "1"
-	if(rDirecrion == Vector2(1, 1)):
-		#print("sd")
-		#$AnimationPlayer.play("WalkDir7")
-		numAnim = "7"
-	if(rDirecrion == Vector2(1, -1) ):
-		#print("WD")
-		#$AnimationPlayer.play("WalkDir5")
-		numAnim = "5"
-	if(rDirecrion == Vector2(-1, -1)):
-		#print("w a")
-		#$AnimationPlayer.play("WalkDir3")
-		numAnim = "3"
-	
+	if input_dir.length() != 0:
+		a = input_dir.angle() / (PI/4)
+		a = wrapi(int(a), 1, 8)
+		current_animation = "WalkDir"
 
-	$AnimationPlayer.play("WalkDir"+numAnim)
+	velocity = input_dir  * speed
+	move_and_slide()
+	$AnimationPlayer.play(current_animation + str(a))
 	
-
 func _physics_process(delta):
-	movePlayer()
+	constrols(delta)
 	move_and_slide()
