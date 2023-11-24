@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var speed = 400  # speed in pixels/sec
-var prevAnim = "a"
+var prevAnim = "1"
 
 func movePlayer(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
@@ -69,12 +69,16 @@ func constrols(delta):
 
 	if input_dir.length() != 0:
 		a = input_dir.angle() / (PI/4)
-		a = wrapi(int(a), 1, 8)
+		a = wrapi(int(a), 0, 8)
+		prevAnim = a
+		print(a)
 		current_animation = "WalkDir"
-
+	if input_dir.length() ==0:
+		current_animation = "IdlAnimatio"
+		
 	velocity = input_dir  * speed
 	move_and_slide()
-	$AnimationPlayer.play(current_animation + str(a))
+	$AnimationPlayer.play(current_animation + str(prevAnim))
 	
 func _physics_process(delta):
 	constrols(delta)

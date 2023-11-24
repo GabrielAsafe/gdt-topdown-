@@ -157,7 +157,7 @@
 	"meta": {
 		"app": "https://pixelover.io",
 		"version": "0.14.4",
-		"filepath": "C:/Users/joeyi/Desktop/IntroUnreal5/knight/Knight/Idle/Knight_Idle_dir5.png",
+		"filepath": "C:/Users/joeyi/Desktop/IntroUnreal5/knight/Knight/Idle/Knight_Idle_dir3.png",
 		"frameAnimations": [
 			{
 				"name": "Idle",
@@ -172,6 +172,6 @@
 			"h": 1024
 		},
 		"view": "Preview",
-		"direction": 4
+		"direction": 2
 	}
 }
