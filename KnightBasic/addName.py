@@ -2,18 +2,14 @@ import os
 
 
 def join_string(list_string):
- 
     # Join the string based on '-' delimiter
     string = '_'.join(list_string)
-    
     return string
 
 directory = os.getcwd() +"\\Idle\\"
 files = os.listdir(directory)
 # rename each file one by one
 for file_name in files:
-
-
     extension = file_name.split(".")
     splited = file_name.split("_")
 
