@@ -76,7 +76,7 @@
 	"meta": {
 		"app": "https://pixelover.io",
 		"version": "0.14.4",
-		"filepath": "C:/Users/joeyi/Desktop/IntroUnreal5/knight/Knight/Run/Knight_Run_dir5.png",
+		"filepath": "C:/Users/joeyi/Desktop/IntroUnreal5/knight/Knight/Run/Knight_Run_dir4.png",
 		"frameAnimations": [
 			{
 				"name": "Run",
@@ -91,6 +91,6 @@
 			"h": 768
 		},
 		"view": "Preview",
-		"direction": 4
+		"direction": 3
 	}
 }

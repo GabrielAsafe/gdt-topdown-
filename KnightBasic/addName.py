@@ -6,7 +6,7 @@ def join_string(list_string):
     string = '_'.join(list_string)
     return string
 
-directory = os.getcwd() +"\\Idle\\"
+directory = os.getcwd() +"\\Jump\\"
 files = os.listdir(directory)
 # rename each file one by one
 for file_name in files:

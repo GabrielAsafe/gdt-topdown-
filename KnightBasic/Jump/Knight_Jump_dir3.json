@@ -103,7 +103,7 @@
 	"meta": {
 		"app": "https://pixelover.io",
 		"version": "0.14.4",
-		"filepath": "C:/Users/joeyi/Desktop/IntroUnreal5/knight/Knight/Jump/Knight_Jump_dir3.png",
+		"filepath": "C:/Users/joeyi/Desktop/IntroUnreal5/knight/Knight/Jump/Knight_Jump_dir1.png",
 		"frameAnimations": [
 			{
 				"name": "Jump",
@@ -118,6 +118,6 @@
 			"h": 768
 		},
 		"view": "Preview",
-		"direction": 2
+		"direction": 0
 	}
 }

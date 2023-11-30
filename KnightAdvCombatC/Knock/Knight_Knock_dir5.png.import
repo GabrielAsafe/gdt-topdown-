@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2spx5elmhds5"
-path="res://.godot/imported/Knight_Jump_dir8.png-68449326194824fa70ce4e280fb82cfc.ctex"
+uid="uid://ci52kkpxbi13r"
+path="res://.godot/imported/Knight_Knock_dir5.png-5cb5262dc411da2a023524ddf8379152.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://KnightBasic/Jump/Knight_Jump_dir8.png"
-dest_files=["res://.godot/imported/Knight_Jump_dir8.png-68449326194824fa70ce4e280fb82cfc.ctex"]
+source_file="res://KnightAdvCombatC/Knock/Knight_Knock_dir5.png"
+dest_files=["res://.godot/imported/Knight_Knock_dir5.png-5cb5262dc411da2a023524ddf8379152.ctex"]
 
 [params]
 

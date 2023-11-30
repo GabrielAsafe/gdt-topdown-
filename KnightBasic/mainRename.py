@@ -74,53 +74,6 @@ def rename(finalFolders):
             print(x)
             print(splited[2])
 
-   
-
-##        if("dir10" in splited[2]):
-##            splited[2]= "dir2"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName)
-##        elif("dir20" in splited[2]):
-##            splited[2]= "dir3"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName)
-##        elif("dir30" in splited[2]):
-##            splited[2]= "dir4"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName)
-##        elif("dir40" in splited[2]):
-##            splited[2]= "dir5"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName)
-##        elif("dir50" in splited[2]):
-##            splited[2]= "dir6"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName)
-##        elif("dir60" in splited[2]):
-##            splited[2]= "dir7"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName) 
-##        elif("dir70" in splited[2]):
-##            splited[2]= "dir0"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##            #os.rename( directory+file_name,directory+newName)
-##        elif("dir00" in splited[2]):
-##            splited[2]= "dir1"+'.' +extension[1]
-##            newName = join_string(splited)
-##            print(newName)
-##
-       # print(directory+file_name,directory+newName)
-        #os.rename( directory+file_name,directory+newName)
-
-
-
 
 def main():
     for file in files:

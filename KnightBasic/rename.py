@@ -17,7 +17,7 @@ def join_string(list_string):
     string = '_'.join(list_string)
     return string
 
-directory = os.getcwd() +"\\Idle\\"
+directory = os.getcwd() +"\\Jump\\"
 files = os.listdir(directory)
 
 cont =1
@@ -82,5 +82,3 @@ for file_name in files:
         os.rename( directory+file_name,directory+newName)
 
 
-print('After rename')
-print(os.listdir(directory))
