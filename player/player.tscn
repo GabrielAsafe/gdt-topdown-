@@ -1,6 +1,6 @@
 [gd_scene load_steps=85 format=3 uid="uid://b0m0uylmoli1a"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_w8k30"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_w8k30"]
 [ext_resource type="Texture2D" uid="uid://c5bn0lxmfyoen" path="res://KnightBasic/Walk/Knight_Walk_dir8.png" id="2_8uxkq"]
 [ext_resource type="Texture2D" uid="uid://bo8o206gxtbjm" path="res://KnightBasic/Attack/Knight_Attack_dir1.png" id="2_23scq"]
 [ext_resource type="Texture2D" uid="uid://cmingat5eqye" path="res://KnightBasic/Attack/Knight_Attack_dir5.png" id="2_tb3bo"]
@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://by333xpvu136s" path="res://KnightBasic/Walk/Knight_Walk_dir5.png" id="15_1uu60"]
 [ext_resource type="Texture2D" uid="uid://gkxpaoxkkjn4" path="res://KnightBasic/Walk/Knight_Walk_dir6.png" id="16_pb205"]
 [ext_resource type="Texture2D" uid="uid://46nj8ymfm0gc" path="res://KnightBasic/Walk/Knight_Walk_dir7.png" id="17_ughmr"]
-[ext_resource type="PackedScene" uid="uid://cl0sd7ynb3aml" path="res://arrow.tscn" id="18_r0g6a"]
+[ext_resource type="PackedScene" uid="uid://cl0sd7ynb3aml" path="res://player/arrow.tscn" id="18_r0g6a"]
 [ext_resource type="Texture2D" uid="uid://drjhepcw75i2s" path="res://KnightBasic/Idle/Knight_Idle_dir2.png" id="21_4nhnw"]
 [ext_resource type="Texture2D" uid="uid://dyb5keqyf13kp" path="res://KnightBasic/Idle/Knight_Idle_dir4.png" id="22_p5noq"]
 [ext_resource type="Texture2D" uid="uid://o0p5uodkguqr" path="res://KnightBasic/Attack/Knight_Attack_dir0.png" id="24_gj7ko"]
