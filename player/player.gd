@@ -7,6 +7,7 @@ var atacking = false
 var running = false
 var jumping = false
 var playing = false
+var current_animation = ""
 @onready var Arrow = $Arrow
 
 func constrols(delta):
@@ -22,23 +23,21 @@ func constrols(delta):
 		prevAnim = a
 		#Arrow.set_rotation(a)#rotaciona a hitbox
 		aceleretion = 10
-		print(a)
 		current_animation = "WalkDir"
 
 
 	elif input_dir.length() ==0:
 		current_animation = "IdlAnimatio"	
+
 		
-	
 		
 	if Input.is_action_pressed("Run") and input_dir.length() != 0 and !atacking:
 		current_animation = "Run" 
 		aceleretion = 50
 		running = true
 
-	#if Input.is_action_pressed("Jump") and running:
-	#	current_animation = "Jump"
-	
+
+
 	velocity = input_dir  * speed * delta * aceleretion	
 	if !playing:
 		$AnimationPlayer.play(current_animation + str(prevAnim))
@@ -52,23 +51,25 @@ func _physics_process(delta):
 
 
 func _input(event):
-	var current_animation = ""
 
+	atacking = false
+	jumping = false
 	
+	print(event.as_text())
 	
 	if Input.is_action_pressed("Jump"):
 		jumping = true;
 		playing = true
 		current_animation = "Jump"
-		print(playing)
+
 
 		
 	if Input.is_action_pressed("attack"):
 		current_animation = "AtackDir" 
-		atacking == true
+		atacking = true
 		playing = true
 		aceleretion = 0
-		print(playing)
+
 		
 	if playing:
 		$AnimationPlayer.play(current_animation + str(prevAnim))
@@ -77,5 +78,3 @@ func play():
 	playing = false
 
 
-func _on_collision_shape_2d_child_entered_tree(node):
-	print("puta")

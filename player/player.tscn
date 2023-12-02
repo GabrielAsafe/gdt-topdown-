@@ -68,10 +68,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.650107, 0.7, 1, 1.35011),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw")]
+"values": [ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw"), ExtResource("8_ygsnw")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -80,10 +80,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.650107, 0.7, 1, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4, 4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -92,10 +92,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.650107, 0.7, 1, 1.35011),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4, 4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_3dnwq"]
@@ -121,10 +135,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.3),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq")]
+"values": [ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq"), ExtResource("2_23scq")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -133,10 +147,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.3),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -145,10 +159,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.3),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_tvti3"]
@@ -174,10 +202,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.37341),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s")]
+"values": [ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s"), ExtResource("2_wns7s")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -186,10 +214,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(4.65661e-10, 0.7, 1.37341),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -198,10 +226,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.37341),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_6qspa"]
@@ -227,10 +269,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t")]
+"values": [ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t"), ExtResource("2_xsy1t")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -239,10 +281,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(4.65661e-10, 0.7, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -251,10 +293,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_psnah"]
@@ -280,10 +336,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.6, 1.33946),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm")]
+"values": [ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm"), ExtResource("6_3fkjm")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -292,10 +348,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.6, 1.33946),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -304,10 +360,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.6, 1.33946),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_jhwg8"]
@@ -333,10 +403,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo")]
+"values": [ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo"), ExtResource("2_tb3bo")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -345,10 +415,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -357,10 +427,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.7, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_yba27"]
@@ -386,10 +470,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.19478, 1.3, 1.4, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi")]
+"values": [ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi"), ExtResource("7_fgdhi")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -398,10 +482,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.19478, 1.3, 1.4, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -410,10 +494,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.19478, 1.3, 1.4, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_rqsu8"]
@@ -439,10 +537,10 @@ tracks/1/path = NodePath(".:texture")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.9, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko")]
+"values": [ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko"), ExtResource("24_gj7ko")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -451,10 +549,10 @@ tracks/2/path = NodePath(".:hframes")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.9, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -463,10 +561,24 @@ tracks/3/path = NodePath(".:vframes")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.9, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [4, 4, 4, 4]
+"values": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_smldw"]
@@ -2351,11 +2463,9 @@ libraries = {
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -8)
-texture = ExtResource("8_ygsnw")
+texture = ExtResource("7_fgdhi")
 hframes = 4
 vframes = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(1.40227, 0.565963)
-
-[connection signal="child_entered_tree" from="CollisionShape2D" to="." method="_on_collision_shape_2d_child_entered_tree"]
