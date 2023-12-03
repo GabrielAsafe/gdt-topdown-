@@ -55,7 +55,7 @@ func _input(event):
 	atacking = false
 	jumping = false
 	
-	print(event.as_text())
+	#print(event.as_text())
 	
 	if Input.is_action_pressed("Jump"):
 		jumping = true;
