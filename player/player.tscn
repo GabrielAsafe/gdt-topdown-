@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://b0m0uylmoli1a"]
+[gd_scene load_steps=87 format=3 uid="uid://b0m0uylmoli1a"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_w8k30"]
 [ext_resource type="Texture2D" uid="uid://c5bn0lxmfyoen" path="res://KnightBasic/Walk/Knight_Walk_dir8.png" id="2_8uxkq"]
@@ -41,6 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://c6or2vtepdd8s" path="res://KnightBasic/Jump/Knight_Jump_dir4.png" id="39_i71vi"]
 [ext_resource type="Texture2D" uid="uid://srsxms5og8ui" path="res://KnightBasic/Jump/Knight_Jump_dir5.png" id="40_fuxcb"]
 [ext_resource type="Texture2D" uid="uid://c5band2qwdkml" path="res://KnightBasic/Jump/Knight_Jump_dir7.png" id="41_j8v86"]
+[ext_resource type="Texture2D" uid="uid://csu0r3s265ccx" path="res://KnightAdvCombatC/Block/Knight_Block_dir0.png" id="42_4s8sf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_emyjm"]
 radius = 39.0128
@@ -574,6 +575,72 @@ tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(1.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_rwhrh"]
+resource_name = "Block"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("42_4s8sf"), ExtResource("42_4s8sf"), ExtResource("42_4s8sf"), ExtResource("42_4s8sf"), ExtResource("42_4s8sf"), ExtResource("42_4s8sf")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 3, 3, 3, 3, 3]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:vframes")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [2, 2, 2, 2, 2, 2]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.5),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
@@ -2407,6 +2474,7 @@ _data = {
 "AtackDir5": SubResource("Animation_jhwg8"),
 "AtackDir6": SubResource("Animation_yba27"),
 "AtackDir7": SubResource("Animation_rqsu8"),
+"Block": SubResource("Animation_rwhrh"),
 "IdlAnimatio0": SubResource("Animation_smldw"),
 "IdlAnimatio1": SubResource("Animation_53fyk"),
 "IdlAnimatio2": SubResource("Animation_vq6wr"),
@@ -2452,6 +2520,7 @@ position = Vector2(-2, -35)
 shape = SubResource("CircleShape2D_emyjm")
 
 [node name="Arrow" parent="." instance=ExtResource("18_r0g6a")]
+visible = false
 position = Vector2(0, -19)
 scale = Vector2(0.5, 0.569)
 
@@ -2463,8 +2532,8 @@ libraries = {
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -8)
-texture = ExtResource("7_fgdhi")
-hframes = 4
+texture = ExtResource("21_4nhnw")
+hframes = 5
 vframes = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]

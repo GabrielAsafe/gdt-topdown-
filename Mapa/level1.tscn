@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://db2b7hyvejpap"]
+[gd_scene load_steps=4 format=3 uid="uid://db2b7hyvejpap"]
 
 [ext_resource type="PackedScene" uid="uid://ms6xaruwftk1" path="res://Mapa/Mapa.tscn" id="1_yeca7"]
+[ext_resource type="PackedScene" uid="uid://stb8dd8xo3xs" path="res://player/enemy.tscn" id="2_jei68"]
 [ext_resource type="PackedScene" uid="uid://b0m0uylmoli1a" path="res://player/player.tscn" id="2_ybrce"]
 
 [node name="level1" instance=ExtResource("1_yeca7")]
@@ -25,4 +26,7 @@ layer_2/tile_data = PackedInt32Array()
 [node name="Player" parent="." index="3"]
 z_index = 2
 
-[node name="Node2D" parent="Player" index="0" instance=ExtResource("2_ybrce")]
+[node name="CharacterBody2D" parent="Player" index="0" instance=ExtResource("2_jei68")]
+
+[node name="Node2D" parent="Player" index="1" instance=ExtResource("2_ybrce")]
+position = Vector2(-304, -77)

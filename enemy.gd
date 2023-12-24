@@ -24,7 +24,7 @@ func constrols(delta):
 		current_animation = "WalkDir"
 
 	elif input_dir.length() ==0:
-		current_animation = "IdlAnimatio"	
+		current_animation = "Idle"	
 
 	if Input.is_action_pressed("Run") and input_dir.length() != 0 and !atacking:
 		current_animation = "Run" 
@@ -61,3 +61,7 @@ func play():
 	playing = false
 	atacking = false
 
+
+
+func _on_sight_area_area_entered(area):
+	print(area)
